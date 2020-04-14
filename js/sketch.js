@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
   blendMode(BLEND);//Don't blend the background
-  background("#F8F8F7");
+  background("#ffffff");
   
   blendMode(MULTIPLY);
   //noFill();
@@ -14,9 +14,9 @@ function draw() {
   //stroke("black");
   //ellipse(660/2,490/2,360,360);
   fill("#F7B7AA");
-  arc(660/2+mouseX/2,490/2,360,360,HALF_PI*2,0);
+  arc(660/2+mouseX/2,490/2+mouseY/2,360,360,HALF_PI*2,0);
   fill("#212E59");
-  arc(660/2-mouseX/2,490/2,360,360,0,HALF_PI*2);
+  arc(660/2-mouseX/2,490/2+mouseY/2,360,360,0,HALF_PI*2);
   
   //stroke("red");
   //line(150,245,510,245);
@@ -29,7 +29,7 @@ function draw() {
   //fill("#aaaaaa");
   //ellipse(402,245,72);
   fill("#202346");
-  ellipse(474-mouseX/2,245,71);
+  ellipse(474-mouseX/2,245-mouseY/2,71);
   
   
   
